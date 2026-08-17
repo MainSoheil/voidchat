@@ -3,7 +3,7 @@ import sqlite3
 
 BASE_DIR = Path.cwd()
 SETTINGS_DIR = BASE_DIR / 'settings'
-DATABASE_PATH = BASE_DIR / "db.sqlite"
+DATABASE_PATH = BASE_DIR / 'tmp' / "db.sqlite"
 
 
 def init_db():
