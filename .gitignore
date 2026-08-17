@@ -7,9 +7,6 @@ venv/
 env/
 
 # Databases
-*.sqlite
-*.sqlite3
-*.db
 
 # Environment variables
 .env

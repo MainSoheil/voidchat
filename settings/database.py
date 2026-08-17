@@ -7,7 +7,7 @@ DATABASE_PATH = BASE_DIR / 'tmp' / "db.sqlite"
 
 
 def init_db():
-    DATABASE_PATH.parent.mkdir(parents=True, exist_ok=True)
+    # DATABASE_PATH.parent.mkdir(parents=True, exist_ok=True)
     with sqlite3.connect(DATABASE_PATH) as conn:
         with open(SETTINGS_DIR / "createTables.sql", "r", encoding="utf-8") as file:
             conn.executescript(file.read())
